@@ -6,7 +6,7 @@ Greetings, fellow traveler! This repo is for my TXLF '18 talk. Here's what you'l
 * [Slides](wheresmybeer.pdf)
 * [List of physical materials used to make the kegerator](MATERIALS.md)
 * [Script to install Sensu on a Raspberry Pi](install.sh)
-* [Check scripts for monitoring all the things](scripts)
+* [Check scripts for monitoring all the things](https://github.com/asachs01/sensu-plugins-rpi-sensors)
 * [Walkthrough of how to put everything together](WALKTHROUGH.md)
 
 There are a couple of prerequesites though:
