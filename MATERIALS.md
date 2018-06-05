@@ -17,6 +17,6 @@ The following is a list of all the components that are present in the KegPi righ
 ### Software
 I'll be making some updates here in the future, but I've been in the process of writing some [Sensu](https://sensu.io) plugins that will do the monitoring and exporting of metric data. Since Sensu saves me from reinventing the wheel, this is what I'll use for monitoring. 
 
-You can find the WIP sensors repo here: [sensu-plugins-rpi-sensors][https://github.com/asachs01/sensu-plugins-rpi-sensors]. Please note that these are works in progress, and at some point, will be folded into the Sensu Plugins ecosystem.
+You can find the WIP sensors repo here: [sensu-plugins-rpi-sensors](https://github.com/asachs01/sensu-plugins-rpi-sensors). Please note that these are works in progress, and at some point, will be folded into the Sensu Plugins ecosystem.
 
 There will also be a dashboard that's more directed at the kegerator metrics, but that's a ways out. 
