@@ -16,6 +16,6 @@ There are a couple of prerequesites though:
 1. You'll need to have an existing Graphite or Influx instance to receive the metric data (if you want that)
 2. You'll also need to have a Sensu Server/API and Uchiwa deployment
 
-To get that pre-existing instance set up, head to [Sensu's training repo](https://github.com/sensu/training-vagrant). You can find the box you need under the [Intro to Sensu](https://github.com/sensu/training-vagrant/workshops/intro-to-sensu) directory.
+To get that pre-existing instance set up, head to [Sensu's training repo](https://github.com/sensu/training-vagrant). You can find the box you need under the [Intro to Sensu](https://github.com/sensu/training-vagrant/tree/master/workshops/intro-to-sensu) directory.
 
 I'd recommend starting off with reading through the install script. From there, check out the checks (see what I did there), and then read the walkthrough to see how everything gets put together.
