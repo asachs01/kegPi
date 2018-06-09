@@ -39,6 +39,8 @@ From there, see the [README][9] on the plugins repo for examples on how to use t
 
 ### Example Wiring Diagram
 
+![Kegpi wiring][11]
+
 #### Contact Sensor
 
 For the contact sensor, I have it wired to the following GPIO ports:
@@ -109,3 +111,4 @@ Once you've added the checks and wired everything to your Pi, restart the Sensu 
 [8]: https://github.com/asachs01/sensu-plugins-rpi-sensors
 [9]: https://github.com/asachs01/sensu-plugins-rpi-sensors/blob/master/README.md
 [10]: https://sourceforge.net/p/raspberry-gpio-python/wiki/BasicUsage/
+[11]: images/kegpiWiring.png
