@@ -1,5 +1,28 @@
-# Where's My Beer
-## Building a Better Kegerator with a Raspberry Pi & Sensu
+# Texas Linux Fest '18 Slides & Info
+
+## Sensu 101 - Intro to Sensu
+
+* [Slides](introToSensu.pdf)
+* [Sensu Training Repo](https://github.com/sensu/training-vagrant)
+
+To get started, run the following commands:
+
+```shell
+git clone https://github.com/sensu/training-vagrant.git
+cd training-vagrant/workshops/intro-to-sensu
+vagrant up
+vagrant ssh
+```
+
+This gives you a minimal Sensu deployment with several checks and handlers already installed. We run through writing our own checks, filters, and handlers in the workshop. These consist of:
+
+* A check to monitor any website
+* A filter to match against `"workshop": "true"`
+* The [community mailer handler](https://github.com/sensu-plugins/sensu-plugins-mailer) to send us emails
+
+## Where's My Beer?
+
+### Building a Better Kegerator with a Raspberry Pi & Sensu
 
 Greetings, fellow traveler! This repo is for my TXLF '18 talk. Here's what you'll find here:
 
