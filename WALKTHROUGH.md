@@ -18,9 +18,15 @@ This is where things can get a bit tricky, and I'll do my best to document exact
 
 ### Setting Up the Raspi
 
-Just getting the Raspi and screen mounted into your Smarticase enclosure should be relatively easy. There are several screws that you'll need to remove in order to mount the Pi and screen and the Smarticase includes instructions for this. 
+Just getting the Raspi and screen mounted into your Smarticase enclosure should be relatively easy. There are several screws that you'll need to remove in order to mount the Pi and screen and the Smarticase includes instructions for this.
 
 If you've not ever set up a Raspi and need a pointer as to where to start with getting the software installed, I recommend the [Raspberry Pi Foundation's][5] documentation on how to do this.
+
+Once you've set up the Pi, you'll need to install Sensu. For instructions on how to do this, please see my [blog post here][6]. There's also the [install script][7] that you can run via:
+
+`curl https://raw.githubusercontent.com/asachs01/txlf18/master/install.sh | bash`
+
+This script will install Ruby, the Sensu rubygem, and provide minimal client configuration for your Sensu client on the Raspberry Pi.
 
 ### Contact Sensor
 
@@ -34,3 +40,5 @@ If you've not ever set up a Raspi and need a pointer as to where to start with g
 [3]: http://aaron.sachs.blog/moving-to-kegging/
 [4]: https://github.com/asachs01/txlf18/blob/master/MATERIALS.md#raspi-components
 [5]: https://www.raspberrypi.org/documentation/installation/installing-images/
+[6]: http://aaron.sachs.blog/monitoring-raspberry-pis-with-sensu/
+[7]: install.sh

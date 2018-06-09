@@ -18,7 +18,7 @@ This gives you a minimal Sensu deployment with several checks and handlers alrea
 
 * A check to monitor any website
 * A filter to match against `"workshop": "true"`
-* The [community mailer handler](https://github.com/sensu-plugins/sensu-plugins-mailer) to send us emails
+* The [community mailer handler](https://github.com/sensu-plugins/sensu-plugins-mailer) to send us emails   
 
 ## Where's My Beer?
 
@@ -31,8 +31,8 @@ Greetings, fellow traveler! This repo is for my TXLF '18 talk. Here's what you'l
 * [Script to install Sensu on a Raspberry Pi](install.sh)
 * [Check scripts for monitoring all the things](https://github.com/asachs01/sensu-plugins-rpi-sensors)
 * [How to Build a Kegerator](http://aaron.sachs.blog/moving-to-kegging/)
-* [How to Set Up Sensu on a Raspberry Pi](https://aaron.sachs.blog/monitoring-my-kegerator-with-sensu/)
-* [How to Monitor a Kegerator with Sensu](https://aaron.sachs.blog/monitoring-raspberry-pis-with-sensu/)
+* [How to Set Up Sensu on a Raspberry Pi](https://aaron.sachs.blog/monitoring-raspberry-pis-with-sensu/)
+* [How to Monitor a Kegerator with Sensu](https://aaron.sachs.blog/monitoring-my-kegerator-with-sensu/)
 * [Walkthrough of how to put everything together](WALKTHROUGH.md)
 
 There are a couple of prerequesites though:
