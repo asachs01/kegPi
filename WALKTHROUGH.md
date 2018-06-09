@@ -28,11 +28,75 @@ Once you've set up the Pi, you'll need to install Sensu. For instructions on how
 
 This script will install Ruby, the Sensu rubygem, and provide minimal client configuration for your Sensu client on the Raspberry Pi.
 
-### Contact Sensor
+Once you've got Sensu running, you'll have to introduce some checks. In particular, the checks for monitoring the kegerator come from my [sensu-plugins-rpi-sensors][8] repo. To get the checks installed, do the following (assumes you're logged into your Pi and are root:
 
+```shell
+cd /etc/sensu/plugins
+git clone https://github.com/asachs01/sensu-plugins-rpi-sensors
+```
 
-### Temp Sensor
+From there, see the [README][9] on the plugins repo for examples on how to use the plugins.
 
+### Example Wiring Diagram
+
+#### Contact Sensor
+
+For the contact sensor, I have it wired to the following GPIO ports:
+
+* Pin 22
+* GND
+
+I use the following check definition to check the check sensor:
+
+```json
+{
+  "checks":{
+    "check-contact-sensor": {
+      "command": "/etc/sensu/plugins/sensu-plugins-rpi-sensors/bin/check-contact-sensor.rb -p 22",
+      "interval": 10,
+      "subscribers": [
+        "kegpi"
+      ]
+    }
+  }
+}
+```
+
+The check above has the `-p` option, which specifies the pin number. You don't have to use this specific pin, but you can.
+
+#### Temp Sensor
+
+For the temp sensor, I have it wired to the following GPIO ports:
+
+* Pin 4 (BCM number, otherwise known as pin #7)
+* GND
+* 3v power (also connected to a 4.7k Ω resistor)
+
+I use the following check definition to check the temp sensor:
+
+```json
+{
+  "checks":{
+    "check-temp-sensor": {
+      "command": "/etc/sensu/plugins/sensu-plugins-rpi-sensors/bin/check-temp-sensor.rb -F -w 45 -c 60",
+      "interval": 15,
+      "subscribers": [
+        "kegpi"
+      ]
+    }
+  }
+}
+```
+
+One note for the temperature sensor, there is an option in the code to specify which numbering system you want to use (either BCM or Board). This is provided by the `rpi_gpio` Rubygem, which is based on the RPi.GPIO Python Library. See the [RPi.GPIO wiki][10] for the distinction here.
+
+#### Weight Scale
+
+UPCOMING! STAY TUNED!
+
+### Putting It All Together
+
+Once you've added the checks and wired everything to your Pi, restart the Sensu server process using `sysctl restart sensu-server` to have the checks set up. One note here, you'll still need to have a _seperate_ instance running the Sensu server process and dashboard for the checks to work.
 
 <!-- LINKS -->
 [1]: https://github.com/asachs01/txlf18/blob/master/MATERIALS.md#kegerator
@@ -42,3 +106,6 @@ This script will install Ruby, the Sensu rubygem, and provide minimal client con
 [5]: https://www.raspberrypi.org/documentation/installation/installing-images/
 [6]: http://aaron.sachs.blog/monitoring-raspberry-pis-with-sensu/
 [7]: install.sh
+[8]: https://github.com/asachs01/sensu-plugins-rpi-sensors
+[9]: https://github.com/asachs01/sensu-plugins-rpi-sensors/blob/master/README.md
+[10]: https://sourceforge.net/p/raspberry-gpio-python/wiki/BasicUsage/
