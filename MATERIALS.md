@@ -19,11 +19,12 @@ The following is a list of all the components that are present in the KegPi righ
 * [Touchscreen for Raspberry Pi](https://www.adafruit.com/product/2718) - $79.95
 * [Magnetic Contact Sensor](https://www.adafruit.com/product/375) - $3.95
 * [Waterproof DS18B20 Digital temperature sensor](https://www.adafruit.com/product/381) - $9.95
-* 2 x [Openscale Board](https://www.sparkfun.com/products/13261)
-* 8 x [50kg load sensors](https://www.sparkfun.com/products/10245) - $9.95
+* 2 x [Openscale Board](https://www.sparkfun.com/products/13261) - $29.95 (per board)
+* 8 x [50kg load sensors](https://www.sparkfun.com/products/10245) - $9.95 (per sensor)
 
 ### Software
-I'll be making some updates here in the future, but I've been in the process of writing some [Sensu](https://sensu.io) plugins that will do the monitoring and exporting of metric data. Since Sensu saves me from reinventing the wheel, this is what I'll use for monitoring. 
+
+I'll be making some updates here in the future, but I've been in the process of writing some [Sensu](https://sensu.io) plugins that will do the monitoring and exporting of metric data. Since Sensu saves me from reinventing the wheel, this is what I'll use for monitoring.
 
 You can find the WIP sensors repo here: [sensu-plugins-rpi-sensors](https://github.com/asachs01/sensu-plugins-rpi-sensors). Please note that these are works in progress, and at some point, will be folded into the Sensu Plugins ecosystem.
 
