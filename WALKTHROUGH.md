@@ -37,6 +37,19 @@ git clone https://github.com/asachs01/sensu-plugins-rpi-sensors
 
 From there, see the [README][9] on the plugins repo for examples on how to use the plugins.
 
+I use the following definition for the `sensu-client` definition:
+
+```json
+{
+ "client": {
+   "environment": "raspi",
+   "subscriptions": [
+     "kegpi"   ]
+  }
+}
+
+```
+
 ### Example Wiring Diagram
 
 ![Kegpi wiring][11]
