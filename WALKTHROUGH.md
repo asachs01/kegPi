@@ -1,8 +1,8 @@
-# Kegerator Walkthrough
+# KegPi Walkthrough
 
 Greetings! Here I'll walk you through the process I went through in creating my kegerator.
 
-## The Kegerator Build
+## The KegPi Build
 
 For this, you'll need the [parts listed][1] under the "Kegerator" heading on the "MATERIALS" doc.
 
@@ -114,10 +114,10 @@ UPCOMING! STAY TUNED!
 Once you've added the checks and wired everything to your Pi, restart the Sensu server process using `sysctl restart sensu-server` to have the checks set up. One note here, you'll still need to have a _seperate_ instance running the Sensu server process and dashboard for the checks to work.
 
 <!-- LINKS -->
-[1]: https://github.com/asachs01/txlf18/blob/master/MATERIALS.md#kegerator
+[1]: https://github.com/asachs01/kegpi/blob/master/MATERIALS.md#kegerator
 [2]: https://missionarybrewer.wordpress.com/how-to-build-your-own-kegerator/
 [3]: http://aaron.sachs.blog/moving-to-kegging/
-[4]: https://github.com/asachs01/txlf18/blob/master/MATERIALS.md#raspi-components
+[4]: https://github.com/asachs01/kegpi/blob/master/MATERIALS.md#raspi-components
 [5]: https://www.raspberrypi.org/documentation/installation/installing-images/
 [6]: http://aaron.sachs.blog/monitoring-raspberry-pis-with-sensu/
 [7]: install.sh
