@@ -24,7 +24,7 @@ If you've not ever set up a Raspi and need a pointer as to where to start with g
 
 Once you've set up the Pi, you'll need to install Sensu. For instructions on how to do this, please see my [blog post here][6]. There's also the [install script][7] that you can run via:
 
-`curl https://raw.githubusercontent.com/asachs01/txlf18/master/install.sh | bash`
+`curl https://raw.githubusercontent.com/asachs01/kegPi/master/install.sh | bash`
 
 This script will install Ruby, the Sensu rubygem, and provide minimal client configuration for your Sensu client on the Raspberry Pi.
 
