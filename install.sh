@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sudo apt-get update && sudo apt-get upgrade
+sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install ruby ruby-dev libffi-dev
 sudo gem install sensu
 
