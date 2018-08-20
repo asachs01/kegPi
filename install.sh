@@ -1,7 +1,7 @@
 #!/bin/sh
 
 sudo apt-get update && sudo apt-get upgrade
-sudo apt-get install ruby ruby-dev
+sudo apt-get install ruby ruby-dev libffi-dev
 sudo gem install sensu
 
 sudo mkdir -p /etc/sensu/conf.d
