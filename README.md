@@ -1,3 +1,6 @@
+**NOTE**:
+This is using Sensu Core, which is an older version of Sensu. I'm in the process of updating this to use Sensu Go, but this will be a while yet. So, feel free to use this, but YMMV when it comes to the monitoring part.
+
 # KegPi
 
 Greetings, fellow traveler! This repo is for everything I have about the KegPi, including my talk. Here's what you'll find here:
